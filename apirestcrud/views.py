@@ -8,7 +8,6 @@ from apirestcrud.database.deleteUserDb import deleteUserDb;
 
 def hello(request):
     array = seeUser();
-    
     if request.method == "GET":
         try:
             response = json.dumps(array)
